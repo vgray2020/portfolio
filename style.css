@@ -1,0 +1,292 @@
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image:url(images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    
+}
+
+section {
+    padding: 100px;
+}
+
+/*HEADER LOGO and NAV BAR*/
+header {
+    position: fixed;
+    z-index: 1;
+    top:0;
+    background-color: white;
+    width: 100%;
+}
+
+nav {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+.nav-ul {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+list-style-type: none;
+}
+
+
+.hamburger {
+    background-color: transparent;
+    border:0;
+    display: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+.nav-ul li a {
+
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav-ul li a:hover{
+    color:blue;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    margin-left: 90px;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+    
+}
+
+.logo:hover{
+    color:blue;
+}
+
+
+/*HI I AM SECTION- MAIN PAGE name and button*/
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+
+.banner h2 {
+    font-size: 2rem;
+    color: black;
+    font-weight: 500;
+}
+
+.banner h3 {
+    font-size: 1.5rem;
+}
+
+.banner h2 span {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#btn {
+    position: relative;
+    background:#2196f3;
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform:uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+
+#btn:hover {
+    color: black;
+}
+
+/*PROJECTS*/
+
+.wrapper {
+    background:rgb(104, 165, 104);
+    margin-top:1px;
+}
+
+.wrapper h2 {
+    text-align:center;
+    padding: 50px;
+}
+
+.img-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-img {
+    padding: 0 20px 20px;
+    
+}
+
+
+img:hover {
+    opacity: .5;
+    transition: .9s;
+}
+
+
+
+/*ABOUT ME*/
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color:ivory;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.content-section .title{
+font-size: 15px;
+}
+
+.content-section .content h3 {
+    margin-top: 20px;
+
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content-section .social {
+    margin:40px 40px;
+
+}
+
+.content-section .social i {
+    font-size: 25px;
+    padding:0px 20px;
+}
+
+.content-section .social i:hover {
+color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color:white;   
+    height: 250px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-ul {
+        display:none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+
+    }
+    .image-section .img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .content-section .social {
+        text-align: center;
+    }
+
+
+}
